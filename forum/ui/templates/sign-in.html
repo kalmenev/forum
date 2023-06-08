@@ -1,0 +1,26 @@
+{{- define "sign-in.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+</head>
+<body>
+    <header class="header">
+        <a class="link" href="/">
+            <h1>Forum</h1>
+        </a>
+    </header>
+   <form action="/login" method="post">
+    <label for="login">Login</label>
+    <label for="password">Password</label>
+
+    <div></div><input type="text" placeholder="username or email" name="login"></div>
+    <div></div><input type="password" placeholder="password" name="password"></div>
+    <div><input type="submit"></div>
+   </form>
+</body>
+</html>
+{{- end}}

@@ -1,0 +1,57 @@
+{{- define "index.html" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/header.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/css/sing_in_up.css" />
+    <link rel="stylesheet" href="/static/css/error.css" />
+    <link rel="stylesheet" href="/static/css/create_post.css" />
+    <link rel="stylesheet" href="/static/css/allposts.css" />
+    <link rel="stylesheet" href="/static/css/post.css" />
+    <link rel="stylesheet" href="/static/css/adaptive.css" />
+
+    
+    <title>Forum</title>
+</head>
+<body>
+    <header class="header">
+        <a class="home_link" href="/">
+            <h1>Forum</h1>
+        </a>
+        <a class="s-up_link" href="/sign-up">
+            <h1>Sign-Up</h1>
+        </a>
+        <a class="log_link" href="/login">
+            <h1>Sign-In</h1>
+        </a>
+    </header>
+    <div class="filter">
+        <div class="category-link">
+            <a href="/?category=alem">Alem</a>
+        </div>
+        <div class="category-link">
+            <a href="/?category=SoftwareDeveloper">Software Developer</a>
+        </div>
+        <div class="category-link">
+            <a href="/?category=ComputerSystemsAnalyst">Computer Systems Analyst</a>
+        </div>
+        <div class="category-link">
+            <a href="/?category=WebDeveloper">Web Developer</a>
+        </div>
+        <div class="category-link">
+            <a href="/?category=Informationsecurity">Information security</a>
+        </div>
+        <div class="category-link">
+            <a href="/?category=Datascience">Data science</a>
+        </div>       
+        <div class="category-link">
+            <a href="/?category=other">Other</a>
+        </div>
+
+</body>
+</html>
+{{- end }}
